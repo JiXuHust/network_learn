@@ -23,7 +23,7 @@ void send_data(int sockfd)
     while (remaining)
     {
         int n_written = send(sockfd, cp, remaining, 0);
-        fprintf(stdout, "send into buffer %ld \n", n_written);
+        fprintf(stdout, "send into buffer %d \n", n_written);
         if (n_written <= 0)
         {
             error(1, errno, "send failed");
