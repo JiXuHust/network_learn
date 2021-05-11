@@ -5,7 +5,7 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 
-#define MESSAGE_SIZE 102400
+#define MESSAGE_SIZE 1024000
 
 void send_data(int sockfd)
 {
