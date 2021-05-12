@@ -1,6 +1,5 @@
 #include "read.h"
 #include <iostream>
-
 size_t readn(int fd, void *buffer, size_t size)
 {
     char *buffer_pointer = (char *)buffer;

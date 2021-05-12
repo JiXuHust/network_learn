@@ -3,7 +3,7 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include "read/read.h"
+#include "read.h"
 
 void read_data(int sockfd)
 {
@@ -16,6 +16,7 @@ void read_data(int sockfd)
         std::cout << "block in read" << std::endl;
         if ((n = readn(sockfd, buf, 1024)) == 0)
             return;
+
         time++;
         std::cout << "read 1K data " << time << " times" << std::endl;
         usleep(1000);
