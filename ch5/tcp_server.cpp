@@ -18,7 +18,7 @@ void read_data(int sockfd)
             return;
         time++;
         std::cout << "read 1K data " << time << " times" << std::endl;
-        usleep(10000);
+        usleep(1000);
     }
 }
 
